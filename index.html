@@ -2,29 +2,63 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Product Landing Page by Ian Robinson</title>
+  <meta name="description" content="A product landing page to fulfill Free Code Camp's curriculum.">
+  <meta name="author" content="Ian Robinson">
+  <title>Learn Podcast Production by Ian Robinson</title>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!-- FROM SKELETON - Thank you Dave - https://github.com/dhg/Skeleton -->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="lib/favicon.png">
+  <!-- END SKELETON -->
+  
+  <link rel="stylesheet" href="css/productLandingPage.css">
 </head>
 <body>
-  <h1 id="title">Step-by-step Guide to Podcast Production</h1>
-  <p id="description">This video course empowers you to follow along as we build a podcast from scratch. If you follow every step, you will have a podcast on iTunes by the end of the course.</p>
-  <form id="survey-form">
-    <label id="name-label">Name</label>
-    <input id="name" type="text" placeholder="name" required></input>
-    <label id="email-label">Email</label>
-    <input id="email" type="email" placeholder="email" required></input>
-    <label id="number-label">Phone</label>
-    <input id="number" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone number" min="0" max="10000000000"></input>
-    <label id="dropdown-label">Age group</label>
-    <select id="dropdown">
-      <option value="6-10">6-10</option>
-      <option value="11-20">11-20</option>
-      <option value="21-30">21-30</option>
-      <option value="31-40">31-40</option>
-      <option value="41-50">41-50</option>
-      <option value="51-60">51-60</option>
-      <option value="61-70+">61-70+</option>
-    </select>
-  </form>
+  <div class="container">
+    <section class="header">
+        <h1 id="title" class="title">Step-by-Step Podcast Production</h1>
+        <p id="description">Follow every step of this short video course and you will have your own podcast on iTunes in no time.</p>
+        <a class="button button-primary" target="_blank" href="https://freedompodcasting.com/udemy">Start</a>
+    </section>
+    <form id="survey-form">
+      <div class="row">
+        <div class="six columns">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="name" required></input>
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="email" required></input>
+          <label id="number-label">Phone</label>
+          <input id="number" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone number" min="0" max="10000000000"></input>
+        </div>
+        <div class"six columns">
+          <label id="dropdown-label">Age group</label>
+          <select id="dropdown">
+            <option value="6-10">6-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-30">21-30</option>
+            <option value="31-40">31-40</option>
+            <option value="41-50">41-50</option>
+            <option value="51-60">51-60</option>
+            <option value="61-70+">61-70+</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
